@@ -21,7 +21,7 @@ const { Server } = require('socket.io');
 
 // tackle cors
 const corsOption = {
-    origin: "http://localhost:5173",
+    origin: "https://bytical-assign-project.onrender.com",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
     allowedHeaders: ['Authorization', 'Content-Type'],
@@ -49,7 +49,7 @@ const server = createServer(app);
 // Socket.IO setup
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://bytical-assign-project.onrender.com",
         methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
         credentials: true,
         allowedHeaders: ['Authorization', 'Content-Type'],

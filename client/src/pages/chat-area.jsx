@@ -13,7 +13,7 @@ const ChatArea = () => {
 
 
   useEffect(() => {
-    const newSocket = io("http://localhost:4000"); // Connect to the backend
+    const newSocket = io("https://bytical-assign-project.onrender.com"); // Connect to the backend
     setSocket(newSocket);
 
     // Emit the userId to the server
