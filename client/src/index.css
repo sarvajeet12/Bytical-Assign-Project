@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  border: 1px solid red;
+  min-height: 100vh;
+}
+
+/* ============================================= login signup style ====================================== */
+.login-container,
+.signUp-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(189, 189, 189, 0.9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .login,
+.signUp-container .signUp {
+  background-color: #fff;
+  padding: 2rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+.login-container .login h1,
+.signUp-container .signUp h1 {
+  font-size: 3rem;
+}
+
+.login-container .login form,
+.signUp-container .signUp form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.login-container .login form input[type="email"],
+.login-container .login form input[type="password"],
+.signUp-container .signUp form input[type="text"],
+.signUp-container .signUp form input[type="email"],
+.signUp-container .signUp form input[type="password"] {
+  width: 100%;
+  height: 3.3rem;
+  padding: 0 0.5rem;
+}
+
+.login-container .login form button[type="submit"],
+.signUp-container .signUp form button[type="submit"] {
+  width: 30%;
+  height: 3.3rem;
+}
+
+.login-container .login p,
+.signUp-container .signUp p {
+  font-size: 1.4rem;
+}
+
+/* ================================================== chat area ============================================= */
+.chatArea {
+  display: flex;
+  height: 100vh;
+}
+
+.chatArea .sidebar {
+  width: 30%;
+  border: 1px solid fuchsia;
+  padding: 2rem;
+}
+.chatArea .conversation {
+  width: 70%;
+  border: 1px solid firebrick;
+}
+
+/* --------------------- sidebar ------------------------------------ */
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin: 3rem 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  background-color: gray;
+  padding: 1rem;
+  cursor: pointer;
+}
+.sidebar ul li img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+.sidebar ul li span {
+  font-size: 1.4rem;
+}
+
+.sidebar input[type="text"] {
+  width: 100%;
+  height: 3.3rem;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+}
+
+.sidebar button {
+  width: 30%;
+  height: 3.3rem;
+}
+
+/* ------------------------- conversation -------------------------------- */
+
+.conversation .conversationHeader {
+  background-color: gray;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.conversation .conversationHeader img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+.conversation .conversationHeader span p:nth-child(1) {
+  font-size: 1.8rem;
+}
+
+.conversation .conversationHeader span p:nth-child(2) {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.conversation .conversationBody form {
+  width: 100%;
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+.conversation .conversationBody form input[type="text"] {
+  width: 60%;
+  height: 3.3rem;
+  padding: 0 .5rem;
+}
+
+.conversation .conversationBody form input[type="submit"] {
+  width: 10%;
+  height: 3.3rem;
+}
+
+/* ----------------- message box -------------- */
+
+.messageBox{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 1rem;
+  border: 1px solid red;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.messageBox .allMsg{
+  background-color: antiquewhite;
+  padding: .5rem 1rem;
+  font-size: 1.4rem;
+}
